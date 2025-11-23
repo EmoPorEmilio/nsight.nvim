@@ -49,7 +49,7 @@ local function transform_cmd_to_regex(cmd)
 end
 
 function M.setup()
-    vim.api.nvim_create_autocmd({"BufferEnter", "BufferLeave"},{
+    vim.api.nvim_create_autocmd({"BufEnter", "BufLeave"},{
         group = group,
         pattern = {"*.cu", "*.cuh"},
         callback = function (event)
