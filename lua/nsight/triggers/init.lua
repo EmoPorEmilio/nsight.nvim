@@ -33,4 +33,9 @@ function M:preSequence(filepaths)
     utils.LogError("Couldn't find a valid CUDA file")
 end
 
+function M.setup()
+    -- Setup code here if needed
+    -- Or leave it empty if there's nothing to do
+end
+
 return M
